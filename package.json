@@ -1,0 +1,24 @@
+{
+  "name": "itsukaralink-client",
+  "version": "0.0.1-0",
+  "description": "www.itsukaralink.jp API Client",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndxbn-tokyo/itsukaralink-client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ndxbn-tokyo/itsukaralink-client/issues"
+  },
+  "homepage": "https://github.com/ndxbn-tokyo/itsukaralink-client#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "typescript": "^3.3.1"
+  }
+}
