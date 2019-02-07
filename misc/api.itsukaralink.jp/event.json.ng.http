@@ -1,2 +1,10 @@
 # 普通に DB アクセスして、見つかるかどうかのレスポンスを返してる んだと思う
-https://api.itsukaralink.jp//events/1.json
+GET https://api.itsukaralink.jp//events/1.json
+
+# 200
+#{
+#  "status": "ng",
+#  "data": {
+#    "message": "イベントが見つかりませんでした"
+#  }
+#}

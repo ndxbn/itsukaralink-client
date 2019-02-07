@@ -1,2 +1,8 @@
 # Liver の JSON はキャッシュが効いてて、404 Not Found になるんだと思う
-https://api.itsukaralink.jp//livers/999999.json
+GET https://api.itsukaralink.jp//livers/999999.json
+
+# 404
+#{
+#  "status": 404,
+#  "error": "Not Found"
+#}

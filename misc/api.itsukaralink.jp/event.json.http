@@ -1,1 +1,23 @@
-https://api.itsukaralink.jp//events/546.json
+GET https://api.itsukaralink.jp//events/546.json
+
+#{
+#  "status": "ok",
+#  "data": {
+#    "event": {
+#      "id": 546,
+#      "name": "Youtube＆Twitter四万人ありがとう配信【雑】",
+#      "description": "お陰様で登録者四万人ありがとうございます！ よくよく考えるとコメントを書いてくださる方々との会話メインの雑談配信は初期以降やってなかったので久々にやってみます。 いっぱい拾うので質問や話題振りなんでもござれっ！ twitterでのコメントハッシュタグは【#社築フィードバック】まで。 twitter: https://twitter.com/846kizuQ",
+#      "public": 1,
+#      "url": "https://www.youtube.com/watch?v=9ZpZLCklgL8",
+#      "start_date": "2019-02-06T00:00:00.000+09:00",
+#      "end_date": "2019-02-06T01:00:00.000+09:00",
+#      "recommend": false,
+#      "liver": {
+#        "id": 43,
+#        "name": "社築",
+#        "avatar": "https://s3-ap-northeast-1.amazonaws.com/liver-icons/400x400/Yashiro_Kizuku.png",
+#        "color": "#B6C6F2"
+#      }
+#    }
+#  }
+#}
