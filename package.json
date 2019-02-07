@@ -2,10 +2,6 @@
   "name": "itsukaralink-client",
   "version": "0.0.1-0",
   "description": "www.itsukaralink.jp API Client",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ndxbn-tokyo/itsukaralink-client.git"
@@ -17,8 +13,68 @@
     "url": "https://github.com/ndxbn-tokyo/itsukaralink-client/issues"
   },
   "homepage": "https://github.com/ndxbn-tokyo/itsukaralink-client#readme",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": "lib/cli.js",
+  "scripts": {
+    "prepare": "run-s build",
+    "start": "node lib/server.js",
+    "pretest": "run-s lint",
+    "test": "jest --forceExit --detectOpenHandles --passWithNoTests",
+    "lint": "run-p lint:*",
+    "lint:tslint": "tslint -p tsconfig.test.json",
+    "lint:tsc": "tsc -p tsconfig.test.json",
+    "lint:prettier": "prettier \"**/*\"",
+    "fmt": "run-s format",
+    "format": "run-s format:*",
+    "format:prettier": "prettier --write \"**/*\"",
+    "format:tsc": "tslint -p tsconfig.test.json --fix",
+    "prebuild": "run-s clean",
+    "build": "tsc",
+    "clean": "run-p clean:*",
+    "clean:lib": "shx rm -rf lib/*"
+  },
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
-    "parcel-bundler": "^1.11.0",
-    "typescript": "^3.3.1"
+    "@types/jest": "24.0.0",
+    "@types/node": "10.12.21",
+    "jest": "~24.1.0",
+    "npm-run-all": "~4.1.5",
+    "prettier": "~1.16.4",
+    "shx": "~0.3.2",
+    "ts-jest": "~23.10.5",
+    "tslint": "~5.12.1",
+    "tslint-config-prettier": "~1.18.0",
+    "typescript": "~3.3.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.ts?(x)",
+      "**/?(*.)+(spec|test).ts?(x)",
+      "**/?+Spec.ts?(x)"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{ts,tsx}",
+      "!**/index.ts"
+    ],
+    "testEnvironment": "node"
   }
 }

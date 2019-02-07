@@ -1,0 +1,45 @@
+# project commons
+.gitkeep
+.*rc
+.*ignore
+.editorconfig
+
+LICENSE
+
+## Node.js
+package-lock.json
+
+## IntelliJ
+.idea
+
+## common lock file
+*.lock
+
+# project specifics
+## dest dir
+lib/
+## view template
+views/
+## coverage
+coverage/
+
+# Not Supported Files
+## Text
+*.txt
+## images
+*.png
+*.jpg
+*.ico
+*.gif
+## XML
+*.xml
+## PlantUML
+*.puml
+*.uml
+## SQL
+*.sql
+## Shell Script
+*.sh
+*.bash
+*.cmd
+*.bat

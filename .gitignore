@@ -1,1 +1,13 @@
+# Node.js
+coverage/
+node_modules/
+## lib/ は npmignore の都合で、各ディレクトリで .gitignore している
+#lib/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# parcel bundler
 .cache/
