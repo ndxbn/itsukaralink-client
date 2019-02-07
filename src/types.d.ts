@@ -3,15 +3,16 @@
 /**
  * イベント
  */
-export type EventInterface = {
-	id: number;
-	name: string;
-	description: string;
-	url: string; // URL
+export type EventInterface = VisibilityInterface &
+	RecommendableInterface & {
+		id: number;
+		name: string;
+		description: string;
+		url: string; // URL
 
-	start_date: string; // maybe ISO8601
-	end_date: string; // maybe ISO8601
-} & VisibilityInterface & RecommendableInterface;
+		start_date: string; // maybe ISO8601
+		end_date: string; // maybe ISO8601
+	};
 
 /**
  * ライバー
@@ -37,10 +38,12 @@ export interface LiverInterface {
 /**
  * Liver のデータのち、Liver 一覧以外のページで使うやつ
  */
-export type LiverSimpleInterface = Pick<LiverInterface, "id" | "name" | "avatar" | "color">
+export type LiverSimpleInterface = Pick<
+	LiverInterface,
+	"id" | "name" | "avatar" | "color"
+>;
 
 export interface LiverYoutubeChannelInterface {
-
 	/**
 	 * サロゲートキーかな
 	 */
@@ -51,7 +54,7 @@ export interface LiverYoutubeChannelInterface {
 	 *
 	 * 内部の DB で Liver Table と分けてるんじゃないかな。複数のチャンネルを持ってることもあるだろうし。
 	 */
-	liver_id: number
+	liver_id: number;
 
 	/**
 	 * YouTube チャンネルの文字列、
@@ -59,7 +62,6 @@ export interface LiverYoutubeChannelInterface {
 	 * e.g. UCWz0CSYCxf4MhRKPDm220AQ
 	 */
 	channel: string;
-
 }
 
 export interface VisibilityInterface {
