@@ -24,7 +24,7 @@
     "lint": "run-p lint:*",
     "lint:tslint": "tslint -p tsconfig.test.json",
     "lint:tsc": "tsc -p tsconfig.test.json",
-    "lint:prettier": "prettier \"**/*\"",
+    "lint:prettier": "prettier -l \"**/*\"",
     "fmt": "run-s format",
     "format": "run-s format:*",
     "format:prettier": "prettier --write \"**/*\"",
@@ -76,5 +76,8 @@
       "!**/index.ts"
     ],
     "testEnvironment": "node"
+  },
+  "dependencies": {
+    "axios": "~0.18.0"
   }
 }
