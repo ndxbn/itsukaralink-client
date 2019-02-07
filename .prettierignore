@@ -23,6 +23,9 @@ views/
 ## coverage
 coverage/
 
+# renovate
+renovate.json
+
 # Not Supported Files
 ## Text
 *.txt
@@ -43,3 +46,5 @@ coverage/
 *.bash
 *.cmd
 *.bat
+## HTTP
+*.http
