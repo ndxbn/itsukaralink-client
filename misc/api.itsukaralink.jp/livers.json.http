@@ -1,0 +1,18 @@
+GET https://api.itsukaralink.jp//livers.json
+#{
+#  "status": "ok",
+#  "data": {
+#    "livers": [
+#      {
+#        "id": 32,
+#        "name": "月ノ美兎",
+#        "description": "高校2年生。性格はツンデレだが根は真面目な学級委員。本人は頑張っているが少し空回り気味で、よく発言した後で言いすぎたかもと落ち込んだりする。",
+#        "avatar": "https://s3-ap-northeast-1.amazonaws.com/liver-icons/400x400/Tsukino_Mito.png",
+#        "public": 1,
+#        "color": "#e43f3b",
+#        "position": 10
+#      }
+#    ]
+#  }
+#}
+#
