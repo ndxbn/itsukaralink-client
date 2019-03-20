@@ -1,5 +1,15 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":automergeMinor",
+    ":automergeBranchMergeCommit",
+    ":rebaseStalePrs",
+    ":prHourlyLimitNone",
+    ":prConcurrentLimitNone",
+    ":respectLatest",
+    ":timezone(Asia/Tokyo)",
+    "group:linters",
+    "preview:dockerVersions",
+    "preview:dockerCompose"
   ]
 }
